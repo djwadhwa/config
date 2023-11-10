@@ -22,7 +22,6 @@ source $HOMEBREW_PREFIX/opt/zsh-git-prompt/zshrc.sh 2>/dev/null
 # ===============================
 PS1='%F{blue}%~ %F{red}%#%f '
 RPROMPT='$(if [ "$__CURRENT_GIT_STATUS" != ": 0 0 0 0 0 0" ]; then; git_super_status; fi)'
-#RPROMPT='$(if [ -e .git ]; then; git_super_status; fi)'
 
 # Brew zsh-completions
 # ===============================
@@ -91,6 +90,10 @@ alias du='du -ch'
 # ===============
 alias h='history'
 
+# history
+# ===============
+alias k='kubectl'
+
 # processes
 # ===============
 alias top='htop'  # if you have `htop` installed
@@ -101,7 +104,7 @@ alias python=python3
 alias py=python3
 alias pip=pip3
 
-# term
+# terminal
 # ===============
 alias q=exit
 
@@ -109,6 +112,8 @@ alias q=exit
 # ===============
 alias discord='open /Applications/Discord.app'
 alias spotify='open /Applications/Spotify.app'
+alias safari='open /Applications/Safari.app'
+alias steam='open /Applications/Steam.app'
 
 # Conda
 # ===============================
